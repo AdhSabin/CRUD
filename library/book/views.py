@@ -43,7 +43,11 @@ def delete_book(request, book_id):
     except Book.DoesNotExist:
         return redirect('index')
     book_shelf.delete()
-    return redirect('index')    
+    return redirect('index')  
+
+
+def demo():
+    pass
 
     
 
